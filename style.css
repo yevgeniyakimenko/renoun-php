@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  padding: 0 2em;
+  font-family: sans-serif;
+  background-color: #efefef;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #eee;
+  }
+}
+
+div.content {
+  margin: auto
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+div.form-section {
+  margin-bottom: 1em;
+}
+
+div.form-values {
+  display: flex;
+  max-width: 500px;
+}
+
+input[type="range"] {
+  width: 300px;
+}
+
+input[type="range"]#hue {
+  display: block;
+  appearance: none;
+  border-radius: 0.25em;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+  height: 0.4em;
+  outline: none;
+  background: linear-gradient(to right, rgb(255,0,0), rgb(255,255,0), rgb(0,255,0),rgb(0,255,255),rgb(0,0,255),rgb(255,0,255),rgb(255,0,0));
+  margin-bottom: 1em;
+}
+
+input[type="range"]#hue::-moz-range-thumb {
+  height: 1.25em;
+  width: 1.25em;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2em;
+  background-color: white;
+  border: 0.2em solid #aaa;
+}
+
+input[type="range"]#hue::-webkit-slider-thumb {
+  height: 1.25em;
+  width: 1.25em;
+  border-radius: 2em;
+  appearance: none;
+  background-color: white;
+  border: 0.2em solid #aaa;
+}
+
+input[type="submit"] {
+  padding: 0.6em 0.8em;
+  margin: 0 auto;
+  width: 6em;
+  height: 3em;
+}
+
+div.hue-box {
+  width: 6em;
+  height: 2em;
+  border-radius: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.hue-box {
+    border: 0.25em solid white;
+  }
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0 0 0.5em 0;
+}
+
+div.button-container {
+  margin: auto 0 auto auto;
+}
+
+button {
+  padding: 0.6em 0.8em;
+}
+
+a {
+  min-height: 0;
+  text-decoration: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  background-image: url('checkerboard.png');
+}
