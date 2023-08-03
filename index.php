@@ -17,15 +17,19 @@ $image = makeImage($hue);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="RanPic PHP is a simple tool to generate random avatars."
+    >
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <link rel="icon" href="dice-five-solid.svg">
-    <title>X-Avatar</title>
+    <title>RanPic (PHP)</title>
 </head>
 
 <body>
     <div class="content">
-        <h1>🎲 X-Avatar</h1>
+        <h1>🎲 RanPic (PHP)</h1>
 
         <form action="index.php" method="get">
             <div class="form-section">

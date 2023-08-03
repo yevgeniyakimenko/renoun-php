@@ -177,7 +177,7 @@ function makeImage($hue) {
     
 
     // output the image
-    $fileName = "xavatar-" . randomString() . ".png";
+    $fileName = "ranpic-php-" . randomString() . ".png";
 
     ob_start();
     imagepng($smallImage);
